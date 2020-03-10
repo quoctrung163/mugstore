@@ -1,0 +1,15 @@
+.Header {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+
+   h1 {
+      font: {
+         family: 'sans-serif';
+         size: 13px;
+      }
+
+      color: red;
+   }
+}

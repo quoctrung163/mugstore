@@ -1,7 +1,18 @@
-import React from './node_modules/react';
+import React from 'react';
+import { Button } from 'reactstrap';
 
-const Header = () => {
-   return <h1>Hello World!</h1>
+import './Header.css';
+
+const Header = (props) => {
+   return (
+      <div className='Header'>
+         <Button color="danger">Danger!</Button>
+         <Button color="danger">Danger!</Button>
+         <Button color="danger">Danger!</Button>
+         <Button color="danger">Danger!</Button>
+         <h1>Hello World!</h1>
+      </div>
+   );
 }
 
 export default Header;
