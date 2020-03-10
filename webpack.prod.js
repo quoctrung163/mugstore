@@ -27,20 +27,20 @@ module.exports = merge(common, {
          filename: "css/index.css"
       }),
       new HtmlWebpackPluin({
-         title: 'Webpack React Example',
+         title: 'MugStore',
          inject: false,
          template: require('html-webpack-template'),
          meta: [{
             name: 'description',
-            content: 'A better default template for html-webpack-plugin.'
+            content: 'MugStore - Best Bag Shop'
          }],
          mobile: true,
          lang: 'en-US',
-         link: [
-            'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700'
-         ],
+         link: [{
+            href: 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700',
+            rel: 'stylesheet'
+         }],
          bodyHtmlSnippet: '<div id="root"></div>',
-         filename: 'index.html'
       })
    ]
 });

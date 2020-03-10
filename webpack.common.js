@@ -12,5 +12,8 @@ module.exports = {
          loader: 'babel-loader',
          exclude: [/node_modules/]
       }]
-   }
+   },
+   performance: {
+      hints: process.env.NODE_ENV === 'production' ? "warning" : false
+   },
 }
